@@ -1,0 +1,438 @@
+@keyframes myAnimOn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@media all and (min-width: 1921px) {
+    .services-images div {
+        min-height: 510px;
+    }
+}
+@media all and (max-width: 1920px) {
+    .services-images div {
+        min-height: 500px;
+    }
+}
+@media all and (max-width: 1760px) {
+    .services-images div {
+        min-height: 450px;
+    }
+}
+@media all and (max-width: 1600px) {
+    .products-images div {
+        min-height: 300px;
+    }
+    .services-images div {
+        min-height: 420px;
+    }
+}
+@media all and (min-width: 1492px) and  (max-width: 1576px) {
+    .services-image1 .justText, .services-image2 .justText, .services-image4 .justText {
+        padding-bottom: 20px;
+    }
+}
+@media all and (min-width: 1111px) and  (max-width: 1491px) {
+    .services-image1 .justText, .services-image4 .justText {
+        padding-bottom: 20px;
+    }
+}
+@media all and (max-width: 1400px) {
+    .products-images div {
+        min-height: 285px;
+    }
+    .services-images div {
+        min-height: 400px;
+    }
+}
+@media all and (max-width: 1250px) {
+    .products-images div {
+        min-height: 260px;
+    }
+    .services-images div {
+        min-height: 350px;
+    }
+}
+@media all and (max-width: 1110px) {
+    .services-images {
+        flex-direction: column;   
+    }
+    .services-images div {
+        width: 100%;
+        background-position: center left 10px;
+        min-height: 165px;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 30%;
+        margin-bottom: 30px;
+    }
+    .services-image-title {
+        margin: 0;
+    }
+    .contacts-form {
+        width: 60%;
+    }
+    .main {
+        min-height: 900px;
+    }
+    .products-images div {
+        min-height: 225px;
+    }
+    @keyframes servicesImgAnim1-1 {
+        from {background: url(../img/slon.png) top left 10px no-repeat;
+            background-size: contain;}
+        25% {background: url(../img/slon-dop4.png) top left 10px no-repeat;
+            background-size: contain;}
+        50% {background: url(../img/slon-dop2.png) top left 10px no-repeat;
+            background-size: contain;}
+        75% {background: url(../img/slon-dop3.png) top left 10px no-repeat;
+            background-size: contain;}
+        to {background: url(../img/slon.png) top left 10px no-repeat;
+            background-size: contain;}
+    }
+    .services-image1:hover {
+        animation: servicesImgAnim1-1 6s infinite;
+    }
+    @keyframes servicesImgAnim2-1 {
+        from {background: url(../img/gorbach.png) top left 10px no-repeat;
+            background-size: contain;}
+        25% {background: url(../img/gorbach-dop1.png) top left 10px no-repeat;
+            background-size: contain;}
+        50% {background: url(../img/gorbach-dop2.png) top left 10px no-repeat;
+            background-size: contain;}
+        75% {background: url(../img/gorbach-dop3.png) top left 10px no-repeat;
+            background-size: contain;}
+        to {background: url(../img/gorbach.png) top left 10px no-repeat;
+            background-size: contain;}
+    }
+    .services-image2:hover {
+        animation: servicesImgAnim2-1 6s infinite;
+    }
+    @keyframes servicesImgAnim3-1 {
+        from {background: url(../img/totoro.png) top left 10px no-repeat;
+            background-size: contain;}
+        25% {background: url(../img/totoro-dop1.png) top left 10px no-repeat;
+            background-size: contain;}
+        50% {background: url(../img/totoro-dop2.png) top left 10px no-repeat;
+            background-size: contain;}
+        75% {background: url(../img/totoro-dop3.png) top left 10px no-repeat;
+            background-size: contain;}
+        to {background: url(../img/totoro.png) top left 10px  no-repeat;
+            background-size: contain;}
+    }
+    .services-image3:hover {
+        animation: servicesImgAnim3-1 6s infinite;
+    }
+    @keyframes servicesImgAnim4-1 {
+        from {background: url(../img/slepoi.png) top left 10px no-repeat;
+            background-size: contain;}
+        25% {background: url(../img/slepoi-dop1.png) top left 10px no-repeat;
+            background-size: contain;}
+        50% {background: url(../img/slepoi-dop2.png) top left 10px no-repeat;
+            background-size: contain;}
+        75% {background: url(../img/slepoi-dop3.png) top left 10px no-repeat;
+            background-size: contain;}
+        to {background: url(../img/slepoi.png) top left 10px no-repeat;
+            background-size: contain;}
+    }
+    .services-image4:hover {
+        animation: servicesImgAnim4-1 6s infinite;
+    }
+}
+@media all and (max-width: 1000px) {
+    .services-image-title {
+        text-align: left;
+    }
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .nav-links-not-visible {
+        display: none;
+    }
+    nav a:not(:last-child) {
+        margin-right: 0;
+    }
+    .nav-links-vertical {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #192c30;
+        padding: 30px;
+        position: fixed;
+        top: 100px;
+        right: 0;
+        left: 0;
+        background: #ffffff;
+        animation: myAnimOn 1s;
+    }
+    .main .justText {
+        text-align: center;
+    }
+    .products-images {
+        flex-wrap: wrap;
+    }
+    .products-images div {
+        width: 48%;
+        min-height: 400px;
+        margin-bottom: 30px;
+    }
+    .contacts-form {
+        width: 70%;
+    }
+    .headerTab {
+        text-align: center;
+    }
+    .main {
+        min-height: 600px;
+    }
+    .contacts-main-top iframe {
+        width: 100%;
+    }
+}
+@media all and (max-width: 850px) {
+    .products-images div {
+        min-height: 300px;
+    }
+}
+@media all and (max-width: 780px) {
+    .services-images div {
+        padding-left: 50%;
+    }
+    .contacts-form {
+        width: 90%;
+    }
+    .main h1, .main h3 {
+        text-align: center;
+    }
+    .main {
+        min-height: 1000px;
+    }
+    .products-images div {
+        min-height: 250px;
+    }
+}
+@media all and (max-width: 635px) {
+    .products-images div {
+        min-height: 230px;
+    }
+}
+@media all and (max-width: 600px) {
+    .footer .justText {
+        text-align: center;
+    }
+    .wrap {
+        padding: 0 40px;
+    }
+    .products-images div {
+        min-height: 190px;
+    }
+}
+@media all and (max-width: 510px) {
+    .products-images div {
+        width: 100%;
+        min-height: 300px;
+    }
+    .about-image {
+        width: 300px;
+        height: 300px;
+        background-size: 100%;
+    }
+    .wrap {
+        padding: 0 30px;
+    }
+}
+@media all and (max-width: 440px) {
+    .main h1 {
+        font-size: 60px;
+    }
+    .headerTab {
+        font-size: 30px; 
+    }
+    .about-image {
+        width: 200px;
+        height: 200px;
+    }
+    .services-images div {
+        width: 100%;
+        background-size: 50%;
+        background-position: center top 10px;
+        min-height: 200px;
+        padding-left: 10px;  
+    }
+    @keyframes servicesImgAnim1-2 {
+        from {background: url(../img/slon.png) top 10px center no-repeat;
+            background-size: 50%;}
+        25% {background: url(../img/slon-dop4.png) top 10px center no-repeat;
+            background-size: 50%;}
+        50% {background: url(../img/slon-dop2.png) top 10px center no-repeat;
+            background-size: 50%;}
+        75% {background: url(../img/slon-dop3.png) top 10px center no-repeat;
+            background-size: 50%;}
+        to {background: url(../img/slon.png) top 10px center no-repeat;
+            background-size: 50%;}
+    }
+    .services-image1:hover {
+        animation: servicesImgAnim1-2 6s infinite;
+    }
+    @keyframes servicesImgAnim2-2 {
+        from {background: url(../img/gorbach.png) top 10px center no-repeat;
+            background-size: 50%;}
+        25% {background: url(../img/gorbach-dop1.png) top 10px center no-repeat;
+            background-size: 50%;}
+        50% {background: url(../img/gorbach-dop2.png) top 10px center no-repeat;
+            background-size: 50%;}
+        75% {background: url(../img/gorbach-dop3.png) top 10px center no-repeat;
+            background-size: 50%;}
+        to {background: url(../img/gorbach.png) top 10px center no-repeat;
+            background-size: 50%;}
+    }
+    .services-image2:hover {
+        animation: servicesImgAnim2-2 6s infinite;
+    }
+    @keyframes servicesImgAnim3-2 {
+        from {background: url(../img/totoro.png) top 10px center no-repeat;
+            background-size: 50%;}
+        25% {background: url(../img/totoro-dop1.png) top 10px center no-repeat;
+            background-size: 50%;}
+        50% {background: url(../img/totoro-dop2.png) top 10px center no-repeat;
+            background-size: 50%;}
+        75% {background: url(../img/totoro-dop3.png) top 10px center no-repeat;
+            background-size: 50%;}
+        to {background: url(../img/totoro.png) top 10px center no-repeat;
+            background-size: 50%;}
+    }
+    .services-image3:hover {
+        animation: servicesImgAnim3-2 6s infinite;
+    }
+    @keyframes servicesImgAnim4-2 {
+        from {background: url(../img/slepoi.png) top 10px center no-repeat;
+            background-size: 50%;}
+        25% {background: url(../img/slepoi-dop1.png) top 10px center no-repeat;
+            background-size: 50%;}
+        50% {background: url(../img/slepoi-dop2.png) top 10px center no-repeat;
+            background-size: 50%;}
+        75% {background: url(../img/slepoi-dop3.png) top 10px center no-repeat;
+            background-size: 50%;}
+        to {background: url(../img/slepoi.png) top 10px center no-repeat;
+            background-size: 50%;}
+    }
+    .services-image4:hover {
+        animation: servicesImgAnim4-2 6s infinite;
+    }
+    .services-image-title {
+        text-align: center;
+        width: 100%;
+        margin-top: 60%;
+    }
+    .social-icons div, .social-icons div:hover {
+        width: 30px;
+        height: 30px;
+        background-size: 120px 30px;
+    } 
+    .social-icons div {
+        margin: 0 20px;
+    }
+    .social-icon1 {
+        background: url(../img/social-not-active.png) top left no-repeat;
+    }
+    .social-icon2 {
+        background: url(../img/social-not-active.png) top left -30px no-repeat;
+    }
+    .social-icon3 {
+        background: url(../img/social-not-active.png) top left -60px no-repeat;
+    }
+    .social-icon4 {
+        background: url(../img/social-not-active.png) top left -90px no-repeat;
+    }
+    .social-icon1:hover {
+        background: url(../img/social-active.png) top left no-repeat;
+    }
+    .social-icon2:hover {
+        background: url(../img/social-active.png) top left -30px no-repeat;
+    }
+    .social-icon3:hover {
+        background: url(../img/social-active.png) top left -60px no-repeat;
+    }
+    .social-icon4:hover {
+        background: url(../img/social-active.png) top left -90px no-repeat;
+    }
+    .main {
+        min-height: 600px;
+    }
+    .products-images div {
+        min-height: 250px;
+    }
+    .contacts-main-top > div > a {
+        width: 300px;
+    }
+    .contacts-top-icon {
+        width: 30px;
+        height: 30px;
+        background-size: 30px 90px;
+    }
+    .tel-icon {
+        background: url(../img/contacts-not-active.png) top left no-repeat;
+        background-size: 30px 90px;
+    }
+    .email-icon {
+        background: url(../img/contacts-not-active.png) top -30px left no-repeat;
+        background-size: 30px 90px;
+    }
+    .address-icon {
+        background: url(../img/contacts-not-active.png) top -60px left no-repeat;
+        background-size: 30px 90px;
+    }
+    .tel-icon:hover {
+        background: url(../img/contacts-active.png) top left no-repeat;
+        background-size: 30px 90px;
+    }
+    .email-icon:hover {
+        background: url(../img/contacts-active.png) top -30px left no-repeat;
+        background-size: 30px 90px;
+    }
+    .address-icon:hover {
+        background: url(../img/contacts-active.png) top -60px left no-repeat;
+        background-size: 30px 90px;
+    }
+    .burger {
+        width: 30px;
+        height: 26px;
+    }
+    .logo {
+        font-size: 40px;
+    }
+    .wrap {
+        padding: 0 20px;
+    }
+}
+@media all and (max-width: 350px) {
+    .main h1 {
+        font-size: 40px;
+    }
+    .main h3 {
+        font-size: 20px;
+    }
+    .headerTab {
+        font-size: 20px; 
+    }
+    .about-image {
+        width: 150px;
+        height: 150px;
+    }
+    .justText {
+        font-size: 16px;
+    }
+    .logo {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    .products-images div {
+        min-height: 200px;
+    }
+    .wrap {
+        padding: 0 10px;
+    }
+    .social-icons div {
+        margin: 0 15px;
+    }
+}

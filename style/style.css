@@ -1,0 +1,767 @@
+body {
+    color: #192c30;
+    font-family: 'Raleway', sans-serif;
+}
+/* общие стили */
+.section-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.line {
+    width: 30%;
+    height: 3px;
+    background-color: #192c30;
+}
+.services-main > .justText, .about .justText {
+    width: 100%;
+    margin: 100px 0;
+    text-align: justify;
+}
+.justText p  {
+    padding: 30px 0;
+}
+.main {
+    min-height: 1080px;
+}
+.headerTab {
+    font-size: 40px; 
+    margin: 30px 0;  
+}
+.more-button, .user-name, .user-email, .user-message {
+    padding: 20px 15px;
+    background-color: #ffffff;
+    border: 1px solid #192c30;
+    color: #192c30;
+    outline: none;
+    margin-bottom: 50px;
+}
+.wrap {
+    max-width: 1920px;
+    margin: 0 auto;
+    background: url(../img/back.jpg) top 88px center no-repeat,
+                url(../img/backInv.jpg) bottom center no-repeat;
+    background-size: 1920px 1080px;
+    padding: 0 50px;
+}
+/* ховеры */
+.more-button:hover {
+    cursor: pointer;
+    background-color: #192c30;
+    color: #ffffff;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.user-name:focus, .user-email:focus, .user-message:focus, .more-button:focus{
+    border: 3px solid #192c30;
+}
+nav a:hover {
+    margin: 0;
+    padding: 10px;
+    background-color: #192c30;
+    color: #ffffff;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.social-icons div:hover {
+    background-size: 160px 40px;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.social-icon1:hover {
+    background: url(../img/social-active.png) top left no-repeat;
+}
+.social-icon2:hover {
+    background: url(../img/social-active.png) top left -40px no-repeat;
+}
+.social-icon3:hover {
+    background: url(../img/social-active.png) top left -80px no-repeat;
+}
+.social-icon4:hover {
+    background: url(../img/social-active.png) top left -120px no-repeat;
+}
+.tel-icon:hover {
+    background: url(../img/contacts-active.png) top left no-repeat;
+    background-size: 40px 120px;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.5s; 
+    -o-transition: 0.5s; 
+    transition: 0.5s;
+}
+.tel-icon:hover + span {
+    margin: 0;
+    padding: 10px;
+
+    background-color: #192c30;
+    color: #ffffff;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.email-icon:hover {
+    background: url(../img/contacts-active.png) top -40px left no-repeat;
+    background-size: 40px 120px;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.email-icon:hover + span {
+    margin: 0;
+    padding: 10px;
+
+    background-color: #192c30;
+    color: #ffffff;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.address-icon:hover {
+    background: url(../img/contacts-active.png) top -80px left no-repeat;
+    background-size: 40px 120px;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.address-icon:hover + span {
+    margin: 0;
+    padding: 10px;
+
+    background-color: #192c30;
+    color: #ffffff;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.myTel a span:hover {
+    margin: 0;
+    padding: 10px;
+    background-color: #192c30;
+    color: #ffffff;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.myEmail a span:hover {
+    margin: 0;
+    padding: 10px;
+    background-color: #192c30;
+    color: #ffffff;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.myAddress a span:hover {
+    margin: 0;
+    padding: 10px;
+    background-color: #192c30;
+    color: #ffffff;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+a:focus, .more-button:focus {
+    background: rgb(25, 44, 48, 0.3);
+}
+a:active, .more-button:active {
+    background: rgba(43, 88, 65, 0.3);
+}
+.products-images div:hover {
+    -webkit-box-shadow: 0 0 20px #582b4c;
+    box-shadow: 0 0 20px #582b4c;
+    background-size: 100%;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+}
+@keyframes aboutImgAnim {
+    from {background-size: 100%;}
+    50% {background-size: 90%;}
+    to {background-size: 100%;}
+}
+.about-image:hover {
+    -webkit-animation: aboutImgAnim 1s;
+    animation: aboutImgAnim 1s;
+}
+@keyframes servicesImgAnim1 {
+    from {background: url(../img/slon.png) top 10px center no-repeat;
+        background-size: contain;}
+    25% {background: url(../img/slon-dop4.png) top 10px center no-repeat;
+        background-size: contain;}
+    50% {background: url(../img/slon-dop2.png) top 10px center no-repeat;
+        background-size: contain;}
+    75% {background: url(../img/slon-dop3.png) top 10px center no-repeat;
+        background-size: contain;}
+    to {background: url(../img/slon.png) top 10px center no-repeat;
+        background-size: contain;}
+}
+.services-image1:hover {
+    animation: servicesImgAnim1 6s infinite;
+}
+@keyframes servicesImgAnim2 {
+    from {background: url(../img/gorbach.png) top 10px center no-repeat;
+        background-size: contain;}
+    25% {background: url(../img/gorbach-dop1.png) top 10px center no-repeat;
+        background-size: contain;}
+    50% {background: url(../img/gorbach-dop2.png) top 10px center no-repeat;
+        background-size: contain;}
+    75% {background: url(../img/gorbach-dop3.png) top 10px center no-repeat;
+        background-size: contain;}
+    to {background: url(../img/gorbach.png) top 10px center no-repeat;
+        background-size: contain;}
+}
+.services-image2:hover {
+    animation: servicesImgAnim2 6s infinite;
+}
+@keyframes servicesImgAnim3 {
+    from {background: url(../img/totoro.png) top 10px center no-repeat;
+        background-size: contain;}
+    25% {background: url(../img/totoro-dop1.png) top 10px center no-repeat;
+        background-size: contain;}
+    50% {background: url(../img/totoro-dop2.png) top 10px center no-repeat;
+        background-size: contain;}
+    75% {background: url(../img/totoro-dop3.png) top 10px center no-repeat;
+        background-size: contain;}
+    to {background: url(../img/totoro.png) top 10px center no-repeat;
+        background-size: contain;}
+}
+.services-image3:hover {
+    animation: servicesImgAnim3 6s infinite;
+}
+@keyframes servicesImgAnim4 {
+    from {background: url(../img/slepoi.png) top 10px center no-repeat;
+        background-size: contain;}
+    25% {background: url(../img/slepoi-dop1.png) top 10px center no-repeat;
+        background-size: contain;}
+    50% {background: url(../img/slepoi-dop2.png) top 10px center no-repeat;
+        background-size: contain;}
+    75% {background: url(../img/slepoi-dop3.png) top 10px center no-repeat;
+        background-size: contain;}
+    to {background: url(../img/slepoi.png) top 10px center no-repeat;
+        background-size: contain;}
+}
+.services-image4:hover {
+    animation: servicesImgAnim4 6s infinite;
+}
+/* заголовок */
+a {
+    text-decoration: none;
+    color: #192c30;
+}
+.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.logo {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+nav a, .contacts-main-top a {
+    font-size: 24px;
+}
+nav a:not(:last-child) {
+    margin-right: 20px;
+}
+/* главная */
+.main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.main h1 {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 90px;
+    letter-spacing: 10px;
+    text-shadow: -4px 3px 4px rgba(25, 44, 48, 0.5);
+}
+.main h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+/* обо мне */
+.about-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+}
+.about-image {
+    width: 400px;
+    height: 400px;
+    background: url(../img/about-image.png) center no-repeat;
+}
+/* услуги */
+.services-images div {
+    background-size: contain;
+    background-color: #ffffff;
+    width: 23%;
+    min-width: 200px;
+    /* min-height: 370px; */
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 10px rgb(88, 43, 76, 0.2);
+    box-shadow: 0 0 10px rgb(88, 43, 76, 0.2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding: 10px;
+}
+.services-image1 {
+    background: url(../img/slon.png) top 10px center no-repeat;
+}
+.services-image2 {
+    background: url(../img/gorbach.png) top 10px center no-repeat;
+}
+.services-image3 {
+    background: url(../img/totoro.png) top 10px center no-repeat;
+}
+.services-image4 {
+    background: url(../img/slepoi.png) top 10px center no-repeat;
+}
+.services-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+}
+.services-images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+}
+.services-image-title {
+    text-align: center;
+    margin-top: 100%;
+}
+.services-button {
+    margin-bottom: 50px;
+}
+/* мои работы */
+.products-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.products-images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.products-images div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-shadow: 0 0 10px rgb(88, 43, 76, 0.5);
+            box-shadow: 0 0 10px rgb(88, 43, 76, 0.5);
+    border-radius: 5px;
+    min-height: 400px;
+    width: 24.8%;
+    min-width: 200px;
+    background-size: 150%;
+    max-width: 420px;
+    cursor: pointer;
+}
+.products-images .small {
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+}
+.products-images {
+    margin-bottom: 30px;
+}
+.bottom-products-images{
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+.products-button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 50px;
+}
+.products-section {
+    max-width: 1920px;
+}
+.products-image1 {
+    background: url(../img/prod1.jpg) top center no-repeat;
+}
+.products-image2 {
+    background: url(../img/prod2.jpg) top center no-repeat;
+}
+.products-image3 {
+    background: url(../img/prod3.jpg) top center no-repeat;
+}
+.products-image4 {
+    background: url(../img/prod4.jpg) top center no-repeat;
+}
+.products-image5 {
+    background: url(../img/prod5.jpg) top center no-repeat;
+}
+.products-image6 {
+    background: url(../img/prod6.jpg) top center no-repeat;
+}
+.products-image7 {
+    background: url(../img/prod7.jpg) top center no-repeat;
+}
+.products-image8 {
+    background: url(../img/prod8.jpg) top center no-repeat;
+}
+.products-image9 {
+    background: url(../img/prod9.jpg) top center no-repeat;
+}
+.products-image10 {
+    background: url(../img/prod10.jpg) top center no-repeat;
+}
+.products-image11 {
+    background: url(../img/prod11.jpg) top center no-repeat;
+}
+.products-image12 {
+    background: url(../img/prod12.jpg) top center no-repeat;
+}
+.products-image13 {
+    background: url(../img/prod13.jpg) top center no-repeat;
+}
+.products-image14 {
+    background: url(../img/prod14.jpg) top center no-repeat;
+}
+.products-image15 {
+    background: url(../img/prod15.jpg) top center no-repeat;
+}
+.products-image16 {
+    background: url(../img/prod16.jpg) top center no-repeat;
+}
+.products {
+    position: relative;
+}
+/* попап */
+.pop-up1 {
+    background: url(../img/prod1.jpg) center no-repeat;
+    background-size: contain;
+}
+.pop-up2 {
+    background: url(../img/prod2.jpg) center no-repeat;
+    background-size: contain;
+}
+.pop-up3 {
+    background: url(../img/prod3.jpg) center no-repeat;
+    background-size: contain;
+}
+.pop-up4 {
+    background: url(../img/prod4.jpg) center no-repeat;
+    background-size: contain;
+}
+.pop-up5 {
+    background: url(../img/prod5.jpg) center no-repeat;
+    background-size: contain;
+}
+.pop-up6 {
+    background: url(../img/prod6.jpg) center no-repeat;
+    background-size: contain;
+}
+.pop-up7 {
+    background: url(../img/prod7.jpg) center no-repeat;
+    background-size: contain;
+}
+.pop-up8 {
+    background: url(../img/prod8.jpg) center no-repeat;
+    background-size: contain;
+}
+.pop-up9 {
+    background: url(../img/prod9.jpg) center no-repeat;
+    background-size: contain;
+}
+.pop-up10 {
+    background: url(../img/prod10.jpg) center no-repeat;
+    background-size: contain;
+}
+.pop-up11 {
+    background: url(../img/prod11.jpg) center no-repeat;
+    background-size: contain;
+}
+.pop-up12 {
+    background: url(../img/prod12.jpg) center no-repeat;
+    background-size: contain;
+}
+.pop-up13 {
+    background: url(../img/prod13.jpg) center no-repeat;
+    background-size: contain;
+}
+.pop-up14 {
+    background: url(../img/prod14.jpg) center no-repeat;
+    background-size: contain;
+}
+.pop-up15 {
+    background: url(../img/prod15.jpg) center no-repeat;
+    background-size: contain;
+}
+.pop-up16 {
+    background: url(../img/prod16.jpg) center no-repeat;
+    background-size: contain;
+}
+.pop-up-not-visible {
+    display: none;
+    background-color: rgb(88, 43, 76, 0.3);
+    width: auto;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    cursor: zoom-out;
+}
+/* контакты */
+.contacts {
+    min-height: 780px;
+}
+.contacts-top {
+    min-height: 900px;
+}
+.contacts-main-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.contacts-main-top > div {
+    margin: 15px 0;
+}
+iframe {
+    margin-bottom: 50px;
+}
+.contacts-main-top > div > a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; 
+    -webkit-box-align: center; 
+        -ms-flex-align: center; 
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+   width: 350px;
+}
+.contacts-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 50px;
+}
+.contacts-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+}
+.contacts-button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+.user-name, .user-email,.user-message {
+    margin-bottom: 30px;
+    -webkit-box-shadow: inset 0 0 10px rgb(88, 43, 76, 0.2);
+    box-shadow: inset 0 0 10px rgb(88, 43, 76, 0.2);
+}
+.user-name, .user-email {
+    height: 80px;
+}
+.user-message {
+    height: 300px;
+}
+.contacts-top-icon {
+    width: 40px;
+    height: 40px;
+}
+.tel-icon {
+    background: url(../img/contacts-not-active.png) top left no-repeat;
+    background-size: 40px 120px;
+}
+.email-icon {
+    background: url(../img/contacts-not-active.png) top -40px left no-repeat;
+    background-size: 40px 120px;
+}
+.address-icon {
+    background: url(../img/contacts-not-active.png) top -80px left no-repeat;
+    background-size: 40px 120px;
+}
+.contacts-main-top iframe {
+    width: 900px;
+    height: 450px;
+}
+/* подвал */
+.footer {
+    min-height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.social-icons div {
+    width: 40px;
+    height: 40px;
+    background-size: 160px 40px;
+    margin: 0 30px;
+}
+.social-icon1 {
+    background: url(../img/social-not-active.png) top left no-repeat;
+}
+.social-icon2 {
+    background: url(../img/social-not-active.png) top left -40px no-repeat;
+}
+.social-icon3 {
+    background: url(../img/social-not-active.png) top left -80px no-repeat;
+}
+.social-icon4 {
+    background: url(../img/social-not-active.png) top left -120px no-repeat;
+}
+/* дополнительные блоки */
+@keyframes myAnimOn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.about-not-visible1, .about-not-visible2, .about-not-visible3, 
+.services-not-visible1, .services-not-visible2, .services-not-visible3, 
+.products-not-visible1, .products-not-visible2, .products-not-visible3, .not-visible {
+    display: none;
+}
+.visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-animation: myAnimOn 1s;
+            animation: myAnimOn 1s;
+}
+.about-not-visible3, .services-not-visible3, .products-not-visible3 {
+    margin: 0 auto;
+}
+.burger {
+    display: none;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+}
+.burger span {
+    width: 100%;
+    height: 2px;
+    background-color: #192c30;
+}
+.burger.active span:first-of-type {
+    opacity: 0;
+}
+.burger.active span:nth-of-type(2) {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-top: 12.5px;
+}
+.burger.active span:nth-of-type(3) {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    margin-bottom: 12.5px;
+}
