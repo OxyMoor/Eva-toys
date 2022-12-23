@@ -11,4 +11,4 @@ The project is a site-portfolio of a master of making soft toys, including 5 pag
 -	Crossbrowser code
 -	Forms
 -	Creating a website layout in Adobe Photoshop
-### Deploy: https://seriakovaoksana.github.io/Eva-toys/
+### Deploy: https://oxymoor.github.io/Eva-toys/
